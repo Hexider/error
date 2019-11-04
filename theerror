@@ -1,7 +1,7 @@
 ---- Minecraft Crash Report ----
-// Shall we play a game?
+// I bet Cylons wouldn't have this problem.
 
-Time: 03.11.2019 22:11
+Time: 04.11.2019 21:35
 Description: Initializing game
 
 java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors!
@@ -17,7 +17,7 @@ java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to err
 	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:188)
 	at net.fabricmc.loader.launch.knot.Knot.init(Knot.java:131)
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:26)
-	Suppressed: net.minecraft.class_151: Non [a-z0-9/._-] character in path of location: raa:ınfradeix
+	Suppressed: net.minecraft.class_151: Non [a-z0-9/._-] character in path of location: raa:ınite
 		at net.minecraft.class_2960.<init>(class_2960.java:38)
 		at net.minecraft.class_2960.<init>(class_2960.java:47)
 		at io.github.vampirestudios.raa.registries.Materials.init(Materials.java:53)
@@ -58,7 +58,7 @@ Details:
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_221, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 48158560 bytes (45 MB) / 287490048 bytes (274 MB) up to 10317201408 bytes (9839 MB)
+	Memory: 119321328 bytes (113 MB) / 358666240 bytes (342 MB) up to 10317201408 bytes (9839 MB)
 	CPUs: 4
 	JVM Flags: 5 total; -Xmn128M -Xmx9852M -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -XX:+UseConcMarkSweepGC
 	Fabric Mods: 
@@ -96,7 +96,6 @@ Details:
 		fabricloader: Fabric Loader 0.6.3+build.168
 		jankson: Jankson 1.0.0+j1.1.2
 		minecraft: Minecraft 1.14.4
-		modmenu: Mod Menu 1.7.14.1.14.4+build.126
 		raa: Randomly Adding Anything 1.2.1+build.101
 	Launched Version: fabric-loader-0.6.3+build.168-1.14.4
 	LWJGL: 3.2.2 build 10
