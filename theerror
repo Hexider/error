@@ -1,12 +1,12 @@
 ---- Minecraft Crash Report ----
-// Everything's going to plan. No, really, that was supposed to happen.
+// Don't be sad, have a hug! <3
 
-Time: 17.11.2019 17:20
+Time: 17.11.2019 17:23
 Description: Initializing game
 
-java.lang.RuntimeException: Could not execute entrypoint stage 'client' due to errors!
+java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors!
 	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.logErrors(EntrypointUtils.java:46)
-	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointClient.start(EntrypointClient.java:33)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointClient.start(EntrypointClient.java:32)
 	at net.minecraft.class_310.<init>(class_310.java:394)
 	at net.minecraft.client.main.Main.main(Main.java:164)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -16,20 +16,17 @@ java.lang.RuntimeException: Could not execute entrypoint stage 'client' due to e
 	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:188)
 	at net.fabricmc.loader.launch.knot.Knot.init(Knot.java:131)
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:26)
-	Suppressed: java.lang.NoClassDefFoundError: net/fabricmc/fabric/impl/client/rendering/ColorProviderRegistryImpl
-		at io.github.vampirestudios.raa.RandomlyAddingAnythingClient.onInitializeClient(RandomlyAddingAnythingClient.java:59)
+	Suppressed: net.minecraft.class_151: Non [a-z0-9/._-] character in path of location: raa:ınen_stone
+		at net.minecraft.class_2960.<init>(class_2960.java:38)
+		at net.minecraft.class_2960.<init>(class_2960.java:47)
+		at io.github.vampirestudios.raa.registries.Dimensions.lambda$createDimensions$1(Dimensions.java:207)
+		at java.lang.Iterable.forEach(Unknown Source)
+		at io.github.vampirestudios.raa.registries.Dimensions.createDimensions(Dimensions.java:205)
+		at io.github.vampirestudios.raa.RandomlyAddingAnything.onInitialize(RandomlyAddingAnything.java:63)
 		at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.lambda$logErrors$0(EntrypointUtils.java:39)
 		at java.util.ArrayList.forEach(Unknown Source)
 		at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.logErrors(EntrypointUtils.java:37)
 		... 10 more
-	Caused by: java.lang.ClassNotFoundException: net.fabricmc.fabric.impl.client.rendering.ColorProviderRegistryImpl
-		at java.net.URLClassLoader.findClass(Unknown Source)
-		at java.lang.ClassLoader.loadClass(Unknown Source)
-		at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-		at java.lang.ClassLoader.loadClass(Unknown Source)
-		at net.fabricmc.loader.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:161)
-		at java.lang.ClassLoader.loadClass(Unknown Source)
-		... 14 more
 
 
 A detailed walkthrough of the error, its code path and all known details is as follows:
@@ -39,7 +36,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 Thread: Render thread
 Stacktrace:
 	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.logErrors(EntrypointUtils.java:46)
-	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointClient.start(EntrypointClient.java:33)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointClient.start(EntrypointClient.java:32)
 	at net.minecraft.class_310.<init>(class_310.java:394)
 
 -- Initialization --
@@ -61,7 +58,7 @@ Details:
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_221, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 170644776 bytes (162 MB) / 350343168 bytes (334 MB) up to 10317201408 bytes (9839 MB)
+	Memory: 127492144 bytes (121 MB) / 345182208 bytes (329 MB) up to 10317201408 bytes (9839 MB)
 	CPUs: 4
 	JVM Flags: 5 total; -Xmn128M -Xmx9852M -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -XX:+UseConcMarkSweepGC
 	Fabric Mods: 
